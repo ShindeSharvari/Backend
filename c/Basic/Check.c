@@ -3,7 +3,6 @@ void main()
 {
 
     float rad;
-
     printf("Enter the radius of a circle : ");
     scanf("%f",&rad);
 
