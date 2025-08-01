@@ -1,7 +1,6 @@
 void main()
 {
     float side;
-
     printf("Enter the side of a equilateral triangle : ");
     scanf("%f",&side);
 
