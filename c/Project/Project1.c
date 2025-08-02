@@ -7,6 +7,7 @@ void squarePattern(int n)
             printf("* ");
         }
         printf("\n");
+        
     }
 }
 
@@ -252,3 +253,4 @@ void main()
     }
     while(i==1);
 }
+
