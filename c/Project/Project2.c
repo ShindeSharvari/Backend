@@ -1,4 +1,5 @@
 
+
 void drawRhombus(int n)
 {
     for(int i=1;i<=n;i++)
@@ -261,4 +262,5 @@ void main()
     }
     while(i==1);
 }
+
 
