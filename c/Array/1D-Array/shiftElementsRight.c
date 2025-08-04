@@ -1,23 +1,19 @@
-void sortDescending(int a[],int size)
+void shiftElement(int a[],int size)
 {
-    for(int i=0;i<size;i++)
+    for(int i=size-1;i>=0;i--)  // started from last for right shift
     {
-     for(int j=i+1;j<size;j++)
-      {
-          if(a[i]<a[j])
-          {
-              int temp =  a[i];
-              a[i] = a[j];
-              a[j]=temp;
-          }
-      }
+        a[i]=a[i-1];   // shifting array
     }
+
+    /*for(int i=0;i<size;i++)  // started from first for left shift
+    {
+        a[i]=a[i+1];   // shifting array
+    }*/
+
     for(int i=0;i<size;i++)
     {
         printf("%d, ",a[i]);
     }
-
-    printf("\n%d is the second largest element in given array ",a[1]);
 }
 
 void main()
@@ -33,5 +29,5 @@ void main()
         scanf("%d",&arr[i]);
     }
 
-    sortDescending(arr,size);
+    shiftElement(arr,size);
 }
