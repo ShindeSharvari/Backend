@@ -1,7 +1,6 @@
 
 
-// Making string upperCase
-
+// find length of string
 int getLengthOfString(char str[])
 {
     int count=0;
@@ -17,3 +16,4 @@ void main()
 
     printf("The length of %s = %d",name,getLengthOfString(name));
 }
+
