@@ -12,7 +12,7 @@ number is given.
 
 
 #include<stdio.h>
-struct StudentInfo {          // declaring structure and giving members with datatype
+struct Student {          // declaring structure and giving members with datatype
     int rollNo;
     char name[50];
     char department[30];
@@ -21,8 +21,8 @@ struct StudentInfo {          // declaring structure and giving members with dat
 };
 
 
-// function for getting user inputs for studentInfo structure
-void getUserInput(int size, struct StudentInfo stud[]) {
+// function for getting user inputs for student structure
+void getUserInput(int size, struct Student stud[]) {
     for (int i = 0; i < size; i++) {     // loop for iterating the number of student to get details
         printf("\n--- Enter details for student %d ---\n", i + 1);
 
@@ -46,7 +46,7 @@ void getUserInput(int size, struct StudentInfo stud[]) {
 }
 
 // function to display student info based on roll no
-void displayByRollNo(struct StudentInfo stud[],int size , int rollNo)
+void displayByRollNo(struct Student stud[],int size , int rollNo)
 {
     int found=0;
     for(int i=0;i<size;i++)
@@ -70,7 +70,7 @@ void displayByRollNo(struct StudentInfo stud[],int size , int rollNo)
 }
 
 //function to display all students info
-void displayStudentInfo(struct StudentInfo stud[],int size)
+void displayStudent(struct Student stud[],int size)
 {
     for(int i=0;i<size;i++)
     {
@@ -85,7 +85,7 @@ void displayStudentInfo(struct StudentInfo stud[],int size)
 
 
 // function for printing names based on joining year
-void printNamesByYear(struct StudentInfo stud[], int size, int year)
+void printNamesByYear(struct Student stud[], int size, int year)
 {
     printf("\nStudents who joined in %d:\n", year);
     int found = 0;
@@ -106,7 +106,7 @@ void printNamesByYear(struct StudentInfo stud[], int size, int year)
 }
 
 //function for user choice
-void userChoice(struct StudentInfo stud[],int size,int choice)
+void userChoice(struct Student stud[],int size,int choice)
 {
     int year,rollNo;
     switch(choice)
@@ -135,7 +135,7 @@ int main() {
     int size,year,rollNo;
     printf("\nEnter the numbers of students ");
     scanf("%d",&size);
-    struct StudentInfo stud[size];  // created and array of size students and named it as stud
+    struct Student stud[size];  // created and array of size students and named it as stud
     getUserInput(size, stud);
 
     int choice=1;
@@ -155,3 +155,4 @@ int main() {
 
     return 0;
 }
+
