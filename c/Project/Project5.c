@@ -112,7 +112,7 @@ void userChoice(struct Student stud[],int size,int choice)
     switch(choice)
     {
         case 1:
-            displayStudentInfo(stud,size);
+            displayStudent(stud,size);
             break;
 
         case 2:
@@ -155,4 +155,5 @@ int main() {
 
     return 0;
 }
+
 
