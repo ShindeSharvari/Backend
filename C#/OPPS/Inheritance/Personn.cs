@@ -76,8 +76,9 @@ namespace Basic.OPPS.Inheritance
             Studentt s1 = new Studentt("Sharvari", "Karad", "MCA", 2022, 200000);
             Console.WriteLine(s1);
 
-            staff st1 = new staff("Sandesh","Pune","SGM",40000);
+            Staff st1 = new Staff("Sandesh","Pune","SGM",40000);
             Console.WriteLine(st1);
         }
     }
 }
+
