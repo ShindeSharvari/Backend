@@ -29,7 +29,7 @@ namespace Basic.Exceptions
                     throw new NegativeAmountException("Amount can't be negative");
                 }
                 Balance -= amount;
-                Console.WriteLine($"✅ Withdrawal successful! Remaining balance: ₹{Balance}");
+                Console.WriteLine($"Withdrawal successful! Remaining balance: ₹{Balance}");
             }
             catch(InvalidOperationException ex)
             {
@@ -59,3 +59,4 @@ namespace Basic.Exceptions
         }
     }
 }
+
